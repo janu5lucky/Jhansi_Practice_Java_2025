@@ -14,6 +14,7 @@ public class largest_number_from_string {
 	      //  String[] num = name.split("a-z");
 	        // System.out.print(Arrays.toString(num));	
 		solution_from_gemini();
+		Sum_of_numbers_from_String();
 }
 
 public static void solution_from_gemini() {
@@ -53,4 +54,28 @@ System.out.println("Word : " + Word);
 
 
 }
+
+public static void Sum_of_numbers_from_String() {
+String input = "A1B2C3D4E5";
+
+int Total = 0;
+
+// Extract the number part from the string
+for (int i = 0; i < input.length(); i++) {
+    char c = input.charAt(i);
+    if (Character.isDigit(c)) {
+    	Total += Character.getNumericValue(c); 
+   
+    }
+ 
+  }
+
+System.out.println("Total of number: " +Total);
+//System.out.println("Word : " + Word);
+
 }
+
+}
+
+
+
