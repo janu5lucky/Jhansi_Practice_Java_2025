@@ -1,6 +1,6 @@
 package Practice_09012025;
 
-public class Reverse_Sting {
+public class Reverse_String {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -9,8 +9,10 @@ public class Reverse_Sting {
 		Reverse_Each_word_of_the_string();
 		Reverse_Each_word_of_the_string_StringBuffer();
 		Reverse_Sentence_forLoop();
-		
-		
+		Reverse_Each_word_of_the_string_StringBuilder();
+		Reverse_Each_word_of_the_string_StringBuffer_and_builder();
+		Reverse_Sentence_using_StringBuilder();
+	
 	}
 	
 	public static void ReverseSrting_With_forLoop() {
@@ -123,6 +125,47 @@ public static void Reverse_Each_word_of_the_string_StringBuffer_and_builder() {
 
     // Trim the trailing space and print the result
     System.out.println(reversewords.toString().trim());
+}
+
+public static void Reverse_Each_word_of_the_string_StringBuilder() {
+	
+	String input ="Hi! My Name is Jhansi";//This is the original Srting
+	
+	// Split the each word based on Space given 
+	
+	String[] splitwords = input.split(" ");
+	
+	String reversewords ="";
+
+	
+	
+	for(String W:splitwords) {
+
+		
+		StringBuilder sb=new StringBuilder(W);
+		sb.reverse();
+		
+		reversewords= reversewords+sb.toString()+" ";
+		
+}
+System.out.println(reversewords);
+
+
+}
+
+public static void Reverse_Sentence_using_StringBuilder() {
+	
+	String input ="Hi! My Name is Jhansi";//This is the original Srting
+	
+	// Split the each word based on Space given 
+	
+	//String[] splitwords = input.split(" ");
+	
+	StringBuilder reversesentence = new StringBuilder(input);
+	reversesentence.reverse();
+	System.out.println(reversesentence);
+
+
 }
 
 

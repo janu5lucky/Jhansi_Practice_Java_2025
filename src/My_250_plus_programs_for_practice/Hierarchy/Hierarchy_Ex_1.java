@@ -21,8 +21,9 @@ class parent{
 }
 
 class child extends parent {
+	
 	public static void sms() {
-		 System.out.println("Print from Parent class");
+		 System.out.println("Print from Child class");
 		 
 			}
 	
