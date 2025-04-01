@@ -67,7 +67,7 @@ public static void reverse_string_with_StringBuilder() {
 	String s2 = "Jhansi";
 	StringBuilder s3 = new StringBuilder(s1);
 	s3.reverse();
-	s3.append(s2);
+	s3.append(" "+s2);
 	System.out.println("Concatinated array witrh StringBuilder and reverse: "+s3);
 	
 	// Concat with String and append word

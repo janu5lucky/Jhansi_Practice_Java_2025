@@ -14,7 +14,7 @@ public class Prog2_printtable_with_printf {
 		for(int i = 1; i<=10;i++) {
 			
 		
-		System.out.printf("%d\t%d\t\n", num+"X"+i+"=", num*i);
+		System.out.printf("%d%d%d\n", num+"X"+i+"=", num*i);
 		
 		
 		}
