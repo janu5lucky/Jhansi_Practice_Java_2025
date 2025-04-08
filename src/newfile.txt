@@ -1,0 +1,2 @@
+Hello! This write to file using buffered writer Line 1 
+Hello! This write to file using buffered writer Line 2 
