@@ -7,10 +7,10 @@ public class Reverse_array_ex_2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//reverse_array_withSorting();
+		reverse_array_withSorting();
 		
-		Reverse_array_using_sameArray_gvreddy_solution();
-		
+		//Reverse_array_using_sameArray_gvreddy_solution();
+		reverse_solution2_by_gemini();
 	}
 	
 	public static void reverse_array_withSorting() {
@@ -21,7 +21,7 @@ public class Reverse_array_ex_2 {
 		System.out.println("Sorted Array : "+Arrays.toString(str));
 		//int[] reverseint  = Arrays.sort(str, Collections.reverseOrder());
 			//	//sort(str,Collections.reverseOrder());
-		///= Collections.reverse(str);
+		//  = Collections.reverse(str);
 		Integer[] integerArray = Arrays.stream(str).boxed().toArray(Integer[]::new);
 		Arrays.sort(integerArray, Collections.reverseOrder());
 		

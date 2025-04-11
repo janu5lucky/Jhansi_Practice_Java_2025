@@ -7,6 +7,7 @@ public class Hierarchy_Ex_1 {
 		
 		parent obj = new child();
 		obj.sms();
+		obj.text();
 
 	}
 	
@@ -18,6 +19,14 @@ class parent{
  
 	}
 	
+	public String text() {
+		
+		String text = "Hello World from parent";
+		 System.out.println(text);
+
+		return text;
+	}
+	
 }
 
 class child extends parent {
@@ -26,6 +35,14 @@ class child extends parent {
 		 System.out.println("Print from Child class");
 		 
 			}
+	
+public String text() {
+		
+		String text = "Hi World from child";
+		 System.out.println(text);
+
+		return text;
+	}
 	
 }
 
