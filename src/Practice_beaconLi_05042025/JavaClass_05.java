@@ -14,7 +14,9 @@ public class JavaClass_05 {
 
 	public static void arraylisyt_approach01() {
 
-		String[] arr = { "apple", "banana", "orange", "strawberry", "grape" };
+		String[] arr = { "strawberry", "banana", "orange", "apple", "grape" };
+		System.out.println("Unsorted array :" + Arrays.toString(arr));
+
 		String[] Sortarr = new String[arr.length];
 		for (int i = 0; i < arr.length - 1; i++) {
 			for (int j = 0; j < arr.length - 1 - i; j++) {

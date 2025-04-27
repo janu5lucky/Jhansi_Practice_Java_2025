@@ -16,7 +16,7 @@ public class Rearrange_word_with_VowelsFirst {
 		
 		String name = "Hi! Jhansi This is - good 843294";
 		String name2 = name.toLowerCase().replaceAll("[^a-z]", "");
-		String numbers = name.toLowerCase().replaceAll("[^0-9]", "");
+		String numbers = name.replaceAll("[^0-9]", "");
 
 		System.out.println(name2);
 		System.out.println(numbers);
