@@ -29,7 +29,11 @@ public class String_to_array_gemini {
 			}
 		}
 
+		System.out.println(numberList);//.toArray(new String[0]);
+		System.out.println(numberList.size());//.toArray(new String[0]);
+
 		// Convert the List to a String array
+		
 		String[] finalNumbers = numberList.toArray(new String[0]);
 
 		System.out.println(Arrays.toString(finalNumbers));

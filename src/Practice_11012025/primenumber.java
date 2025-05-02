@@ -5,7 +5,7 @@ public class primenumber {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int num=6, count=0;
+		int num=4, count=0;
 		
 		if(num>1)
 		{
@@ -14,7 +14,7 @@ public class primenumber {
 				if(num%i==0)
 					count++;
 			}
-		if(count ==2)
+		if(count==2)
 		{
 			System.out.println ("prime number");
 			
