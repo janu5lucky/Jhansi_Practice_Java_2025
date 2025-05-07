@@ -5,7 +5,7 @@ public class find_duplicatenums_inString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String str = "123123456789102";
+		String str = "123456123789";
 		int l = str.length();
 		int count;
 		for(int i =0;i<l;i++) {

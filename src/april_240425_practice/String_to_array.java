@@ -15,12 +15,7 @@ public class String_to_array {
 		String[] nums = str.split("[^0-9]");
 		String[] newnums = new String[nums.length];
 
-		for (String num :nums) { 
-			if (!num.isEmpty()){
-	//	newnums = num+newnums;
-		 
-		}
-		}
+	
 		List<String> numberList = new ArrayList<>();
 		for (String num1 : nums) {
 			if (!num1.isEmpty()) {

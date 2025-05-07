@@ -16,6 +16,7 @@ public class greatestin_stringNumber_ex_06 {
 		int n =0;
 		for(int i=0; i<str.length();i++) {
 			char c = str.charAt(i);
+			
 			if(Character.isDigit(c)) {
 				for(int j=1;j<str.length();j++) {
 					char b = str.charAt(j);

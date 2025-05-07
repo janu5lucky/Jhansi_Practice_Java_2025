@@ -1,4 +1,4 @@
-package April_29042025_Arrays_simplycoding.Arrays_2D;
+package  April_29042025_Arrays_simplycoding.Arrays_2D;
 
 import java.util.Arrays;
 
@@ -36,7 +36,11 @@ public class Array2D_programs_Ex_02 {
 		System.out.println();
 		program12B_transpose_2Darray3X2_elements();
 		System.out.println();
+		program13_Sort_2Darray_eachRow_elements();
+		System.out.println();
 		program13_Sort_2Darray_ascending_elements();
+		System.out.println();
+		program14_Sort_2Darray_descending_elements();
 		System.out.println();
 		
 	}
@@ -366,12 +370,12 @@ static void program13_Sort_2Darray_ascending_elements() {
 	int[][] arr1 = new int[l][l2];
 	System.out.println(Arrays.deepToString(arr));
 	
-		for(int row =0;row<l;row++) {
-			for(int col=0;col<l;col++) {
-			if(arr[row][col]> arr[row+1][col+1]) {
+		for(int row =0;row<l-1;row++) {
+			for(int col=row+1;col<l2-1;col++) {
+			if(arr[row][col]> arr[row][col+1]) {
 				int temp = arr[row][col];
-				arr[row][col] = arr[row+1][col+1];
-				arr[row+1][col+1] = temp;
+				arr[row][col] = arr[row][col+1];
+				arr[row][col+1] = temp;
 			}
 		}
 		}	
@@ -379,7 +383,7 @@ static void program13_Sort_2Darray_ascending_elements() {
 	System.out.println("Sorting an array ascending");
 
 	//System.out.println(Arrays.deepToString(arr1));
-	System.out.println(Arrays.deepToString(arr1));
+	System.out.println(Arrays.deepToString(arr));
 
 }
 static void program14_Sort_2Darray_descending_elements() {
@@ -403,10 +407,65 @@ static void program14_Sort_2Darray_descending_elements() {
 		}
 		}	
 	
-	System.out.println("Transpose of Array 3X2 array to 2X3");
+	System.out.println("Descending array ");
+
+	//System.out.println(Arrays.deepToString(arr1));
+	System.out.println(Arrays.deepToString(arr));
+
+}
+
+static void program14_Sort_2Darray_eachcolumn_elements() {
+	
+	int[][] arr = {{11,52,33},
+					{34,66,21},
+					{45,88,76}};
+	
+	int l = arr.length;
+	int l2 = arr[0].length;
+	int[][] arr1 = new int[l][l2];
+	System.out.println(Arrays.deepToString(arr));
+	
+		for(int row =0;row<l-1;row++) {
+			for(int col=0;col<l2-1;col++) {
+			if(arr[row][col]> arr[row+1][col+1]) {
+				int temp = arr[row][col];
+				arr[row][col] = arr[row+1][col+1];
+				arr[row+1][col+1] = temp;
+			}
+		}
+		}	
+	
+	System.out.println("Sorting an array ascending");
 
 	//System.out.println(Arrays.deepToString(arr1));
 	System.out.println(Arrays.deepToString(arr1));
+
+}
+static void program13_Sort_2Darray_eachRow_elements() {
+	
+	int[][] arr = {{11,52,33},
+					{34,66,21},
+					{45,88,76}};
+	
+	int l = arr.length;
+	int l2 = arr[0].length;
+	System.out.println(Arrays.deepToString(arr));
+	
+		for(int row =0;row<l;row++) {
+			for(int col=0;col<l2;col++) {
+				for(int k = 0;k<l-col-1;k++) {
+			if(arr[row][k]> arr[row][k+1]) {
+				int temp = arr[row][k];
+				arr[row][k] = arr[row][k+1];
+				arr[row][k+1] = temp;
+			}
+		}
+		}	
+		}
+	System.out.println("Sorted array each row");
+
+	//System.out.println(Arrays.deepToString(arr1));
+	System.out.println(Arrays.deepToString(arr));
 
 }
 

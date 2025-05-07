@@ -1,6 +1,6 @@
 package April_27042025_collections_practice;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class String_Duplicate_using_Maps_Ex_04 {
 
