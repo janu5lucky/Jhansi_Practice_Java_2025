@@ -14,7 +14,6 @@ public class String_Duplicate_using_Maps_Ex_04 {
 
 		HashMap<String, Integer> map = new HashMap<>();
 		for(int i =0;i<l;i++) {
-		//	for(int j =i+1;j<l-1;j++) {
 			String s = strarr[i];
 				if(map.containsKey(s))
 				{
