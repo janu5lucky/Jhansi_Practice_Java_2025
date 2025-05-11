@@ -19,10 +19,7 @@ public class frequencyof_chars_Ex_04 {
 					output.append(", ");
 				}map.clear();
 			}
-			
-		}
-		
-System.out.println(output.toString());
+			}
+		System.out.println(output.toString());
 	}
-
 }
