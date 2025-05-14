@@ -16,10 +16,8 @@ public class Vowels_consonants_inString_P11 {
 		String tolower = str.toLowerCase();
 		String vowels ="";
 		String consonants ="";
-
 		for(char c : tolower.toCharArray()) {
 			if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u') {
-				
 				vowels =vowels+c;
 			}else {
 				consonants = consonants+c;
