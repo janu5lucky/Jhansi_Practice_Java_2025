@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class sum_int_from_String_P12 {
+public class sum_intarray_from_String_P12 {
 
 	public static void main(String[] args) {
 		String str = "a2b3c5d6";
