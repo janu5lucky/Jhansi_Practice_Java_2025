@@ -9,31 +9,31 @@ public class String_to_int_Ex_06 {
 	public static void main(String[] args) {
 
 		String str = "01010101";
-	//	String_to_int_Approach1(str);
-		String_to_int_Approach2(str);
+		String_to_int_Approach1(str);
+	//	String_to_int_Approach2(str);
 
 	}
 
 	public static void String_to_int_Approach1(String str) {
 
-		// List<Integer> num0 = new ArrayList<>();
-		// List<Integer> num1 = new ArrayList<>();
-		String num0 = "";
-		String num1 = "";
+		 List<Integer> num0 = new ArrayList<>();
+		 List<Integer> num1 = new ArrayList<>();
+		//int num0 = "";
+		//String num1 = "";
 
 		for (int i = 0; i < str.length(); i++) {
 			char c = str.charAt(i);
 			if (Character.isDigit(c)) {
 				if (c == 0) {
-					num0 +=(int)c;
+					num0.add(Character.getNumericValue(c));
 				} else if (c == 1) {
 
-					num1 = num1 + c;
+					num1.add(Character.getNumericValue(c));
 				}
 			}
 		}
-		System.out.println(num0.toString());
-		System.out.println(num1.toString());
+		System.out.println(num0);
+		System.out.println(num1);
 
 	}
 	

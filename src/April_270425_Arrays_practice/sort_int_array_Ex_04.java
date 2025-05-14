@@ -7,8 +7,10 @@ public class sort_int_array_Ex_04 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		numericarray_sort_ascending();
-		numericarray_sort_descending();
+		//numericarray_sort_ascending();
+		//numericarray_sort_descending();
+		numericarray_sort_ascending_Single_loop();
+		
 			}
 
 	public static void numericarray_sort_ascending() {
@@ -22,15 +24,34 @@ public class sort_int_array_Ex_04 {
 					int temp = arr[i];
 					arr[i] = arr[j];
 					arr[j]=temp;
-					
-				}
+			}
 				
 			}
 			
 		}System.out.println(Arrays.toString(arr));
+	}
+	
+	public static void numericarray_sort_ascending_Single_loop() {
+		int[] arr = {12,3,4,5,6,7,-1,-2,-3,-4,};
+		int l = arr.length;
+		//int[] sortarr;
+		
+		for(int i =0;i<l-1;i++) {
+			
+				if(arr[i+1]<arr[i]) {
+					int temp = arr[i];
+					arr[i] = arr[i+1];
+					arr[i+1]=temp;
+					
+				}
+				
+			}
+			System.out.println(Arrays.toString(arr));
 		
 
 	}
+
+	
 	public static void numericarray_sort_descending() {
 		int[] arr = {12,3,4,5,6,7,-1,-2,-3,-4,};
 		int l = arr.length;

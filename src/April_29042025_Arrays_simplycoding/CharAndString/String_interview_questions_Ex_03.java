@@ -4,9 +4,9 @@ public class String_interview_questions_Ex_03 {
 
 	public static void main(String[] args) {
 
-		replace_upper_to_lower();
-		reverse_string_and_replace_upper();
-		reverse_string_and_replace_upper2();
+//		replace_upper_to_lower();
+//		reverse_string_and_replace_upper();
+//		reverse_string_and_replace_upper2();
 		reverse_string_and_replace_upper3();
 		
 	}
@@ -46,15 +46,16 @@ public class String_interview_questions_Ex_03 {
 	public static void reverse_string_and_replace_upper3() {
 
 		String s = "HellO";
+		String str ="";
 		for (int i = 0; i <s.length(); i++) {
 			char c = s.charAt(i);
 			if (Character.isUpperCase(c)) {
-				s+=Character.toLowerCase(c);
+				str +=  Character.toLowerCase(c);
 			}else if(Character.isLowerCase(c)) {
-				s+=Character.toUpperCase(c);
+				str += Character.toUpperCase(c);
 
 			}else {
-				s+=c;
+				str += c;
 			}
 		}
 		System.out.println(s);

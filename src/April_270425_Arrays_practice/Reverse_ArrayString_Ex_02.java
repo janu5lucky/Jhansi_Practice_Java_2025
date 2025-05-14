@@ -15,7 +15,6 @@ public class Reverse_ArrayString_Ex_02 {
 				String temp = arr[i];
 				arr[i] = arr[j];
 				arr[j] = temp;
-				
 			}
 		}
 		System.out.println(Arrays.toString(arr));
