@@ -3,7 +3,7 @@ package My_top_100_programs_java_13052025;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Even_and_odd_int_array_P1 {
+public class Even_and_odd_int_array_P01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
