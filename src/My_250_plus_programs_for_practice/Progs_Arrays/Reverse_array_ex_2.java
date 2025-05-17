@@ -53,7 +53,8 @@ public class Reverse_array_ex_2 {
 	public static void reverse_solution2_by_gemini(){
 		
 		int[] str = {23, 2, 4, 67, 12, 5, 9};
-        Arrays.sort(str); // Sort the original array in ascending order
+     //   Arrays.sort(str); // Sort the original array in ascending order
+        System.out.print("Original array : "+Arrays.toString(str));
 
         System.out.print("Reverse Sorted Array: ");
         for (int i = str.length - 1; i >= 0; i--) {

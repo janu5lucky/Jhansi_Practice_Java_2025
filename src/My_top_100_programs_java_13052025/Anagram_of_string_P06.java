@@ -35,8 +35,5 @@ System.out.println("given Strings are Anagram");
 		System.out.println("given Strings are not Anagram");		
 		return false;
 	}
-	
 }
-	
-	
 }

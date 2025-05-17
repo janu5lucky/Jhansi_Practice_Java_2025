@@ -14,7 +14,6 @@ public class String_to_num_P10 {
 		for(String s:numbers) {
 			if(!s.isEmpty()) {
 				list.add(Integer.parseInt(s));
-				
 			}
 			
 		}System.out.println(list);
